@@ -1,0 +1,32 @@
+package selfProgramming;
+import java.util.Arrays;
+public class SortNumericArrayAndStringArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int [] number = { 
+				150, 170, 145, 130, 310,
+				220, 256, 357, 118, 115,
+				248, 345, 210, 213, 148 };
+		
+		String [] language = {
+				"Java", "PHP", "Python", "C++", "C#", "C Programming" };
+		
+		System.out.println("Original numeric array: " + Arrays.toString(number));
+		Arrays.sort(number);
+		System.out.println("Sorted numeric array: " + Arrays.toString(number));
+
+		System.out.println("Original string array: " + Arrays.toString(language));
+		Arrays.sort(language);
+		System.out.println("Sorted string array: " + Arrays.toString(language));
+
+	}
+
+}
+
+Output:
+Original numeric array: [150, 170, 145, 130, 310, 220, 256, 357, 118, 115, 248, 345, 210, 213, 148]
+Sorted numeric array: [115, 118, 130, 145, 148, 150, 170, 210, 213, 220, 248, 256, 310, 345, 357]
+Original string array: [Java, PHP, Python, C++, C#, C Programming]
+Sorted string array: [C Programming, C#, C++, Java, PHP, Python]
