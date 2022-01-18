@@ -1,0 +1,33 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+public class MethodAverage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner scan = new Scanner (System.in);
+		System.out.println("First number: ");
+		int a = scan.nextInt();
+		System.out.println("Second number: ");
+		int b = scan.nextInt();
+		System.out.println("Third number: ");
+		int c = scan.nextInt();
+		
+		System.out.println("The smallest number is " + average(a, b, c));
+	}
+
+	public static double average (double a, double b, double c) {
+		return (a + b + c)/ 3;
+	}
+}
+
+Output:
+First number: 
+4
+Second number: 
+5
+Third number: 
+9
+The smallest number is 6.0
