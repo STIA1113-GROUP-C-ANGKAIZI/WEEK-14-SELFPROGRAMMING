@@ -1,0 +1,26 @@
+package selfProgramming;
+
+import java.util.Arrays;
+
+public class CopyArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int [] array = {13, 31, 45, 54, 612, 126};
+		int [] newarray = new int [6];
+		
+		System.out.println("Source array: " + Arrays.toString(array));
+		
+		for (int i = 0; i < array.length; i++) {
+			newarray[i] = array[i];
+		}
+		
+		System.out.println("New array(copy): " + Arrays.toString(newarray));
+	}
+
+}
+
+Output:
+Source array: [13, 31, 45, 54, 612, 126]
+New array(copy): [13, 31, 45, 54, 612, 126]
