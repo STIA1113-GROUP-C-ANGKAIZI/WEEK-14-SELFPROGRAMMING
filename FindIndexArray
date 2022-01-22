@@ -1,0 +1,28 @@
+package selfProgramming;
+
+public class FindIndexArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int [] array = {25, 14, 18, 56, 48, 79, 13, 04, 98, 67};
+		System.out.println("Index position of 25 is: " + findIndex(array, 25));
+		System.out.println("Index position of 13 is: " + findIndex(array, 13));
+	}
+	
+	public static int findIndex(int [] array, int x) {
+		if(array == null) return -1;
+		int len = array.length;
+		int i = 0;
+		while (i<len) {
+			if (array[i] == x) return i;
+			else i = i + 1;
+		}
+		return -1;
+	}
+
+}
+
+Output:
+Index position of 25 is: 0
+Index position of 13 is: 6
