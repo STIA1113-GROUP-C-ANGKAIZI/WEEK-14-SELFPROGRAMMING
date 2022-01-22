@@ -1,0 +1,28 @@
+package selfProgramming;
+
+import java.util.Arrays;
+
+public class RemoveSpecificElement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int [] array = {13, 31, 130, 310, 158, 456};
+		
+		System.out.println("Original array: " + Arrays.toString(array));
+		
+		//remove first element (index-->0, value-->13)
+		int remove = 0;
+		
+		for (int i = remove; i<array.length -1; i++) {
+			array[i] = array[i+1];
+		}
+		
+		System.out.println("After remove first number: " + Arrays.toString(array));
+	}
+
+}
+
+Output:
+Original array: [13, 31, 130, 310, 158, 456]
+After remove first number: [31, 130, 310, 158, 456, 456]
