@@ -1,0 +1,29 @@
+package selfProgramming;
+
+import java.util.Arrays;
+
+public class InsertElementArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int [] array = {13, 31, 130, 310, 456, 789};
+		
+		// Insert an element in 3rd position of the array (index->2, value->100)
+		int position = 2;
+		int number = 100;
+		
+		System.out.println("Original array: " + Arrays.toString(array));
+		
+		for(int i = array.length-1; i>position; i--) {
+			array[i] = array[i-1];
+		}
+		array[position] = number;
+		System.out.println("New array: " + Arrays.toString(array));
+	}
+
+}
+
+Output:
+Original array: [13, 31, 130, 310, 456, 789]
+New array: [13, 31, 100, 130, 310, 456]
